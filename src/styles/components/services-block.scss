@@ -1,0 +1,25 @@
+.services-block {
+  border: 1px solid rgba(30, 30, 30, 0.2);
+  padding: 32px 40px;
+  border-radius: 4px;
+  height: 100%;
+
+  &__number {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    color: rgba(19, 15, 73, 0.5);
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    opacity: 0.7;
+    margin: 0;
+  }
+}

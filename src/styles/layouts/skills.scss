@@ -1,0 +1,28 @@
+.skills {
+  padding: 75px 0;
+  background-color: var(--gray-100);
+
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 60px 25px;
+
+    @media (max-width: 666px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      background-color: unset;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    height: 100%;
+  }
+}

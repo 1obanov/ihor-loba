@@ -1,0 +1,29 @@
+.social {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  @media (max-width: 1023px) {
+    justify-content: flex-start;
+  }
+
+  li {
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: rgba(19, 15, 73, 0.05);
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: rgba(19, 15, 73, 0.1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kristi&display=swap');
+
+@import "./base/common";
+@import "./base/typography";
+
+@import "./components/preloader";
+@import "./components/header";
+@import "./components/mobile-menu";
+@import "./components/sidebar";
+@import "./components/headline";
+@import "./components/info-block";
+@import "./components/profile-block";
+@import "./components/services-block";
+@import "./components/skills-block";
+@import "./components/form";
+@import "./components/social";
+@import "./components/copyright";
+
+@import "./layouts/home";
+@import "./layouts/about";
+@import "./layouts/profile";
+@import "./layouts/services";
+@import "./layouts/skills";
+@import "./layouts/projects";
+@import "./layouts/contact";

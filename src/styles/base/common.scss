@@ -1,0 +1,90 @@
+* {
+  box-sizing: inherit;
+  max-height: 1000000px;
+
+  &:after,
+  &:before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+  padding-left: 370px;
+
+  @media (max-width: 1199px) {
+    padding-left: 280px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-left: unset;
+    margin-top: 48px;
+  }
+}
+
+.section {
+  @media (max-width: 1023px) {
+    scroll-margin-top: 48px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--secondary);
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  padding: 14px 32px;
+  white-space: nowrap;
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    background-color var(--animation-duration) var(--animation-timing-function);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--primary);
+      background-color: transparent;
+    }
+  }
+
+  &--outline {
+    color: var(--primary);
+    background-color: transparent;
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--white);
+        background-color: var(--secondary);
+      }
+    }
+  }
+}

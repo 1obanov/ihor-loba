@@ -1,0 +1,22 @@
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  a {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--secondary);
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+}

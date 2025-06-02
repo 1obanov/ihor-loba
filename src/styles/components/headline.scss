@@ -1,0 +1,27 @@
+.headline {
+  &:not(:last-child) {
+    margin-bottom: var(--headline-margin, 40px);
+  }
+
+  &__subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary);
+    margin: 0;
+
+    @media (max-width: 1600px) {
+      font-size: 18px;
+    }
+  }
+}

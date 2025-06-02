@@ -1,0 +1,18 @@
+.services {
+  padding: 75px 0;
+
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
+  
+  &__wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    align-items: center;
+  }
+
+  &__item {
+    height: 100%;
+  }
+}
