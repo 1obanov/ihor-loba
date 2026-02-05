@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ihor-loba/static/css/main.27ac1d28.css",
-    "main.js": "/ihor-loba/static/js/main.724dd55c.js",
-    "static/media/IhorLobanov.pdf": "/ihor-loba/static/media/IhorLobanov.2a2b7ac697504c2cf584.pdf",
-    "static/media/project-3.png": "/ihor-loba/static/media/project-3.7e66fb8ffa6a15b6fb5d.png",
-    "static/media/project-4.png": "/ihor-loba/static/media/project-4.d04e9e942b735a9d0d74.png",
+    "main.css": "/ihor-loba/static/css/main.9f8924de.css",
+    "main.js": "/ihor-loba/static/js/main.83db3d68.js",
+    "static/media/IhorLobanov.pdf": "/ihor-loba/static/media/IhorLobanov.657b6748802dc1fb59a4.pdf",
     "static/media/image.png": "/ihor-loba/static/media/image.befb0890225004d3bab4.png",
-    "static/media/project-1.png": "/ihor-loba/static/media/project-1.0d50554727f9a4a8ad63.png",
-    "static/media/project-2.png": "/ihor-loba/static/media/project-2.1bf704749c5746a7ea7d.png",
+    "static/media/project-4.png": "/ihor-loba/static/media/project-4.f78fec596f0e849683c5.png",
+    "static/media/project-3.png": "/ihor-loba/static/media/project-3.d2833196c33bd97371a6.png",
+    "static/media/project-2.png": "/ihor-loba/static/media/project-2.cdaaee900603461ac6da.png",
+    "static/media/project-5.png": "/ihor-loba/static/media/project-5.480a7b95c294c474f994.png",
+    "static/media/project-1.png": "/ihor-loba/static/media/project-1.53439cba0704a5a9c4c2.png",
     "static/media/jquery.svg": "/ihor-loba/static/media/jquery.99b61c0b99804623b8068b370f57367d.svg",
     "static/media/sass.svg": "/ihor-loba/static/media/sass.05ab1a306d18bb30f72b56b328f38946.svg",
     "static/media/react.svg": "/ihor-loba/static/media/react.db7005b9882d8de3c53fdd2a57bc73aa.svg",
@@ -17,11 +18,11 @@
     "static/media/css.svg": "/ihor-loba/static/media/css.d92f803b37a472774edffa3f59f8dfa1.svg",
     "static/media/html.svg": "/ihor-loba/static/media/html.0931ce637893000a52b0522aff78c764.svg",
     "static/media/angular.svg": "/ihor-loba/static/media/angular.c19a19d1234a99cb1911377516871374.svg",
-    "main.27ac1d28.css.map": "/ihor-loba/static/css/main.27ac1d28.css.map",
-    "main.724dd55c.js.map": "/ihor-loba/static/js/main.724dd55c.js.map"
+    "main.9f8924de.css.map": "/ihor-loba/static/css/main.9f8924de.css.map",
+    "main.83db3d68.js.map": "/ihor-loba/static/js/main.83db3d68.js.map"
   },
   "entrypoints": [
-    "static/css/main.27ac1d28.css",
-    "static/js/main.724dd55c.js"
+    "static/css/main.9f8924de.css",
+    "static/js/main.83db3d68.js"
   ]
 }
