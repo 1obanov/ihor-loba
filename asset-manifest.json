@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ihor-loba/static/css/main.9f8924de.css",
-    "main.js": "/ihor-loba/static/js/main.83db3d68.js",
+    "main.js": "/ihor-loba/static/js/main.0e0da691.js",
     "static/media/IhorLobanov.pdf": "/ihor-loba/static/media/IhorLobanov.657b6748802dc1fb59a4.pdf",
     "static/media/image.png": "/ihor-loba/static/media/image.befb0890225004d3bab4.png",
     "static/media/project-4.png": "/ihor-loba/static/media/project-4.f78fec596f0e849683c5.png",
@@ -19,10 +19,10 @@
     "static/media/html.svg": "/ihor-loba/static/media/html.0931ce637893000a52b0522aff78c764.svg",
     "static/media/angular.svg": "/ihor-loba/static/media/angular.c19a19d1234a99cb1911377516871374.svg",
     "main.9f8924de.css.map": "/ihor-loba/static/css/main.9f8924de.css.map",
-    "main.83db3d68.js.map": "/ihor-loba/static/js/main.83db3d68.js.map"
+    "main.0e0da691.js.map": "/ihor-loba/static/js/main.0e0da691.js.map"
   },
   "entrypoints": [
     "static/css/main.9f8924de.css",
-    "static/js/main.83db3d68.js"
+    "static/js/main.0e0da691.js"
   ]
 }
