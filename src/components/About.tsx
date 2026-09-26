@@ -1,3 +1,25 @@
+interface ContactInfo {
+  title: string;
+  text: string;
+  link: string;
+  isExternal?: boolean;
+}
+
+const contactList: ContactInfo[] = [
+  {
+    title: "Located",
+    text: "Cracow, Poland",
+    link: "https://goo.gl/maps/dRMvLeSL5yBh2JyG9",
+    isExternal: true,
+  },
+  {
+    title: "Mail",
+    text: "ihor.loba@gmail.com",
+    link: "mailto:ihor.loba@gmail.com",
+  },
+  { title: "Phone", text: "+48 881 291 317", link: "tel:+48881291317" },
+];
+
 function About() {
   return (
     <section id="about" className="section about">
@@ -29,30 +51,20 @@ function About() {
               </p>
             </div>
             <div className="info">
-              <div className="info__item">
-                <div className="info-block">
-                  <span className="info-block__title">Located</span>
-                  <a
-                    href="https://goo.gl/maps/dRMvLeSL5yBh2JyG9"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Cracow, Poland
-                  </a>
+              {contactList.map((contact) => (
+                <div key={contact.title} className="info__item">
+                  <div className="info-block">
+                    <span className="info-block__title">{contact.title}</span>
+                    <a
+                      href={contact.link}
+                      target={contact.isExternal ? "_blank" : undefined}
+                      rel={contact.isExternal ? "noreferrer" : undefined}
+                    >
+                      {contact.text}
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="info__item">
-                <div className="info-block">
-                  <span className="info-block__title">Mail</span>
-                  <a href="mailto:ihor.loba@gmail.com">ihor.loba@gmail.com</a>
-                </div>
-              </div>
-              <div className="info__item">
-                <div className="info-block">
-                  <span className="info-block__title">Phone</span>
-                  <a href="tel:+48881291317">+48 881 291 317</a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

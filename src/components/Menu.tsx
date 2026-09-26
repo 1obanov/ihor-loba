@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 
-function Menu({ handleLinkClick }) {
-  const [activeSection, setActiveSection] = useState("home");
+interface MenuProps {
+  handleLinkClick?: () => void;
+}
+
+function Menu({ handleLinkClick }: MenuProps) {
+  const [activeSection, setActiveSection] = useState<string>("home");
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll<HTMLElement>("section");
 
     const handleScroll = () => {
       let currentSection = "";
@@ -14,7 +18,7 @@ function Menu({ handleLinkClick }) {
         const sectionHeight = section.clientHeight;
 
         if (window.scrollY >= sectionTop - sectionHeight / 4) {
-          currentSection = section.getAttribute("id");
+          currentSection = section.getAttribute("id") || "";
         }
       });
 
@@ -44,12 +48,12 @@ function Menu({ handleLinkClick }) {
               <a
                 href={`#${section}`}
                 className={activeSection === section ? "active" : ""}
-                onClick={handleLinkClick ? () => handleLinkClick() : null}
+                onClick={handleLinkClick}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             </li>
-          )
+          ),
         )}
       </ul>
     </div>

@@ -13,19 +13,29 @@ const schema = yup.object().shape({
   message: yup.string().required("Message is required"),
 });
 
+type FormData = yup.InferType<typeof schema>;
+
+interface FormStatus {
+  message: string;
+  type: "success" | "error" | "";
+}
+
 function Contact() {
-  const [formStatus, setFormStatus] = useState({ message: "", type: "" });
+  const [formStatus, setFormStatus] = useState<FormStatus>({
+    message: "",
+    type: "",
+  });
 
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm({
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: FormData) => {
     try {
       await emailjs.send(
         "service_9f04lmi",
@@ -35,7 +45,7 @@ function Contact() {
           email: data.email,
           message: data.message,
         },
-        "w8wB3ylHih_6--icS"
+        "w8wB3ylHih_6--icS",
       );
 
       setFormStatus({

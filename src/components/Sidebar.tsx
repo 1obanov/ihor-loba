@@ -1,11 +1,11 @@
-import { Menu } from "../components/Menu";
-import { Social } from "../components/Social";
-import { Copyright } from "../components/Copyright";
+import { Menu } from "./Menu";
+import { Social } from "./Social";
+import { Copyright } from "./Copyright";
 
-function Sidebar({ mobileMenuShow }) {
+function Sidebar() {
   return (
     <>
-      <div className={`sidebar ${mobileMenuShow ? "show" : ""}`}>
+      <div className="sidebar">
         <div className="sidebar__inner">
           <div className="author">
             <h4>
@@ -20,7 +20,6 @@ function Sidebar({ mobileMenuShow }) {
           </div>
         </div>
       </div>
-      {mobileMenuShow && <div className="backdrop"></div>}
     </>
   );
 }

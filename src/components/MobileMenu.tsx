@@ -1,9 +1,14 @@
-import { Menu } from "../components/Menu";
-import { Social } from "../components/Social";
-import { Copyright } from "../components/Copyright";
+import { Menu } from "./Menu";
+import { Social } from "./Social";
+import { Copyright } from "./Copyright";
 import { X } from "lucide-react";
 
-function MobileMenu({ mobileMenuShow, toggleMobileMenu }) {
+interface MobileMenuProps {
+  mobileMenuShow: boolean;
+  toggleMobileMenu: () => void;
+}
+
+function MobileMenu({ mobileMenuShow, toggleMobileMenu }: MobileMenuProps) {
   const handleLinkClick = () => {
     setTimeout(() => {
       toggleMobileMenu();

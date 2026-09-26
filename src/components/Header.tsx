@@ -1,7 +1,12 @@
-import { MobileMenu } from "../components/MobileMenu";
+import { MobileMenu } from "./MobileMenu";
 import { Menu } from "lucide-react";
 
-function Header({ mobileMenuShow, toggleMobileMenu }) {
+interface HeaderProps {
+  mobileMenuShow: boolean;
+  toggleMobileMenu: () => void;
+}
+
+function Header({ mobileMenuShow, toggleMobileMenu }: HeaderProps) {
   return (
     <>
       <div className="header">
