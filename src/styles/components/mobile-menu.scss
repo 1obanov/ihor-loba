@@ -1,23 +1,23 @@
 .mobile-menu {
-  width: 250px;
-  height: 100dvh;
-  padding-bottom: env(safe-area-inset-bottom);
   position: fixed;
-  left: 0px;
-  top: 0px;
-  background-color: var(--white);
-  padding: 10px 20px 20px 20px;
-  overflow-y: auto;
-  transform: translateX(-100%);
+  top: 0;
+  left: 0;
   z-index: 2;
   display: none;
+  width: 250px;
+  height: 100dvh;
+  padding: 10px 20px 20px;
+  background-color: var(--white);
+  transform: translateX(-100%);
   transition: transform 0.5s var(--animation-timing-function);
+  padding-bottom: env(safe-area-inset-bottom);
+  overflow-y: auto;
 
-  @media (max-width: 1023px) {
+  @media (width <= 1023px) {
     display: block;
   }
 
-  @media (max-width: 666px) {
+  @media (width <= 666px) {
     width: 220px;
   }
 
@@ -25,16 +25,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     gap: 40px;
+    height: 100%;
   }
 
   .close-menu {
     display: flex;
-    color: var(--secondary);
     padding: 0;
-    border: unset;
+    color: var(--secondary);
     background-color: unset;
+    border: unset;
   }
 
   .menu {
@@ -49,9 +49,9 @@
         }
 
         a {
-          color: var(--primary);
-          padding: 5px 0;
           display: inline-block;
+          padding: 5px 0;
+          color: var(--primary);
 
           &.active {
             color: var(--purple);
@@ -73,12 +73,12 @@
 }
 
 .backdrop {
-  background-color: var(--black);
-  height: 100vh;
-  left: 0;
-  opacity: 0.5;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
   z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  opacity: 0.5;
 }

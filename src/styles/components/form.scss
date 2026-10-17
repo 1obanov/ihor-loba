@@ -9,8 +9,8 @@
 
     .error {
       display: inline-block;
-      color: var(--red-500);
       font-size: 14px;
+      color: var(--red-500);
       margin-top: 5px;
     }
   }
@@ -18,16 +18,16 @@
   &__input,
   &__textarea {
     width: 100%;
+    padding: 20px;
+    font-family: var(--font-secondary);
     color: var(--secondary);
     background-color: var(--white);
     border: 1px solid #eee;
     border-radius: 4px;
-    font-family: var(--font-secondary);
-    padding: 20px;
     outline: none;
 
     &::placeholder {
-      color: rgba(19, 15, 73, 0.5);
+      color: rgb(19 15 73 / 50%);
     }
 
     &:focus {
@@ -36,7 +36,7 @@
 
     &:-webkit-autofill {
       background-color: var(--white) !important;
-      box-shadow: 0 0 0px 1000px var(--white) inset !important;
+      box-shadow: 0 0 0 1000px var(--white) inset !important;
     }
   }
 
@@ -53,9 +53,9 @@
       opacity: 0.5;
     }
 
-    @media (max-width: 666px) {
-      max-width: 100%;
+    @media (width <= 666px) {
       justify-content: center;
+      max-width: 100%;
     }
   }
 
@@ -70,15 +70,15 @@
     }
 
     &--success {
+      color: var(--green-900);
       background-color: var(--green-100);
       border: 1px solid var(--green-200);
-      color: var(--green-900);
     }
 
     &--error {
+      color: var(--red-900);
       background-color: var(--red-100);
       border: 1px solid var(--red-200);
-      color: var(--red-900);
     }
   }
 }

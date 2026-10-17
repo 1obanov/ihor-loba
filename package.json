@@ -11,7 +11,6 @@
     "emailjs-com": "^3.2.0",
     "firebase": "^11.2.0",
     "lucide-react": "^0.482.0",
-    "node-sass": "^7.0.3",
     "react": "^18.3.1",
     "react-datepicker": "^8.2.1",
     "react-dom": "^18.3.1",
@@ -29,7 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-css": "node-sass src/styles/style.scss -o src/styles",
+    "check:styles": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,scss,css,md}\" && stylelint \"src/**/*.{css,scss}\"",
+    "format:styles": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,scss,css,md}\" && stylelint \"src/**/*.{css,scss}\" --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -61,6 +61,11 @@
     "autoprefixer": "^10.4.21",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
+    "prettier": "^3.9.10",
+    "sass": "^1.105.2",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-order": "^8.1.2",
     "typescript": "^4.9.5"
   }
 }

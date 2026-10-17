@@ -1,16 +1,16 @@
 .profile {
-  background-color: var(--gray-200);
   padding: 75px 0;
+  background-color: var(--gray-200);
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     padding: 50px 0;
   }
 
   &__wrapper {
     display: grid;
+    align-items: center;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    align-items: center;
   }
 
   &__item {

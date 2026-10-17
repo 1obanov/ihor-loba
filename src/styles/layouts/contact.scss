@@ -1,24 +1,24 @@
 .contact {
   --headline-margin: 20px;
 
-  background-color: var(--blue);
   padding: 75px 0;
+  background-color: var(--blue);
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     padding: 50px 0;
   }
 
   &__wrapper {
     display: grid;
+    align-items: center;
     gap: 100px;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
 
-    @media (max-width: 1439px) {
+    @media (width <= 1439px) {
       gap: 50px;
     }
 
-    @media (max-width: 767px) {
+    @media (width <= 767px) {
       grid-template-columns: 1fr;
     }
   }
@@ -36,23 +36,23 @@
       }
 
       a {
-        color: var(--secondary);
-        font-weight: 600;
-        font-family: var(--font-primary);
-        display: inline-block;
         position: relative;
+        display: inline-block;
         padding: 2px 0;
+        font-family: var(--font-primary);
+        font-weight: 600;
+        color: var(--secondary);
 
         &::after {
           position: absolute;
-          content: "";
+          bottom: 0;
+          left: 0;
           width: 100%;
           height: 2px;
-          left: 0px;
-          bottom: 0;
           background-color: var(--secondary);
           transition: width var(--animation-duration)
             var(--animation-timing-function);
+          content: "";
         }
 
         @media (hover: hover) {

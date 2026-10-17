@@ -15,12 +15,12 @@
   }
 
   &__text {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--secondary);
     margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary);
 
-    @media (max-width: 1600px) {
+    @media (width <= 1600px) {
       font-size: 18px;
     }
   }

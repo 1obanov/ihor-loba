@@ -2,8 +2,8 @@
   box-sizing: inherit;
   max-height: 1000000px;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     box-sizing: inherit;
   }
 }
@@ -19,9 +19,9 @@ body {
 }
 
 .wrapper {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .main {
@@ -29,45 +29,46 @@ body {
   width: 100%;
   padding-left: 370px;
 
-  @media (max-width: 1199px) {
+  @media (width <= 1199px) {
     padding-left: 280px;
   }
 
-  @media (max-width: 1023px) {
+  @media (width <= 1023px) {
     padding-left: unset;
     margin-top: 48px;
   }
 }
 
 .section {
-  @media (max-width: 1023px) {
+  @media (width <= 1023px) {
     scroll-margin-top: 48px;
   }
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .btn {
-  color: var(--white);
-  background-color: var(--secondary);
-  font-size: 18px;
-  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 10px;
   max-width: max-content;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--secondary);
   border: 1px solid var(--secondary);
   border-radius: 4px;
-  padding: 14px 32px;
-  white-space: nowrap;
-  transition: color var(--animation-duration) var(--animation-timing-function),
+  transition:
+    color var(--animation-duration) var(--animation-timing-function),
     background-color var(--animation-duration) var(--animation-timing-function);
+  white-space: nowrap;
 
   @media (hover: hover) {
     &:hover {

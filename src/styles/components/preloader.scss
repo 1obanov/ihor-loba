@@ -1,68 +1,68 @@
 #preloader {
   position: fixed;
-  left: 0;
   top: 0;
-  height: 100vh;
-  width: 100%;
+  left: 0;
   z-index: 99999;
   display: flex;
+  width: 100%;
+  height: 100vh;
 
   &::before,
   &::after {
-    content: "";
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: -1;
     width: 50%;
     height: 100%;
-    z-index: -1;
     background-color: var(--black);
     transition: all 0.3s ease 0s;
+    content: "";
   }
 
   &::after {
-    left: auto;
     right: 0;
+    left: auto;
   }
 
   .loader_line {
-    margin: auto;
+    position: relative;
     width: 1px;
     height: 250px;
-    position: relative;
-    overflow: hidden;
+    margin: auto;
     transition: all 0.8s ease 0s;
+    overflow: hidden;
 
     &::before {
-      content: "";
       position: absolute;
-      left: 0;
       top: 50%;
+      left: 0;
       width: 1px;
       height: 0%;
-      transform: translateY(-50%);
       background-color: var(--white);
-      animation: lineHeight 1000ms ease-in-out 0s forwards;
+      transform: translateY(-50%);
+      content: "";
+      animation: line-height 1000ms ease-in-out 0s forwards;
     }
 
     &::after {
-      content: "";
       position: absolute;
-      left: 0;
       top: 0;
+      left: 0;
       width: 1px;
       height: 100%;
       background-color: var(--white);
       transform: translateY(-100%);
-      animation: lineRound 1200ms linear 0s infinite;
+      content: "";
+      animation: line-round 1200ms linear 0s infinite;
       animation-delay: 2000ms;
     }
   }
 
   &.preloaded {
     .loader_line {
-      opacity: 0;
       height: 100% !important;
+      opacity: 0;
 
       &::after {
         opacity: 0;
@@ -71,33 +71,36 @@
 
     &::after,
     &::before {
-      animation: preloadedZero 300ms ease-in-out 500ms forwards;
+      animation: preloaded-zero 300ms ease-in-out 500ms forwards;
     }
   }
 }
 
-@keyframes lineHeight {
+@keyframes line-height {
   0% {
     height: 0%;
   }
+
   100% {
     height: 100%;
   }
 }
 
-@keyframes lineRound {
+@keyframes line-round {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(200%);
   }
 }
 
-@keyframes preloadedZero {
+@keyframes preloaded-zero {
   0% {
     width: 50%;
   }
+
   100% {
     width: 0%;
   }

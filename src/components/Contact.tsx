@@ -102,7 +102,6 @@ function Contact() {
               <div className="form__group">
                 <input
                   type="text"
-                  name="name"
                   placeholder="Enter your name"
                   aria-label="Name"
                   className="form__input"
@@ -115,7 +114,6 @@ function Contact() {
               <div className="form__group">
                 <input
                   type="email"
-                  name="email"
                   placeholder="Your email"
                   aria-label="Email"
                   className="form__input"
@@ -127,7 +125,6 @@ function Contact() {
               </div>
               <div className="form__group">
                 <textarea
-                  name="message"
                   placeholder="Write something..."
                   aria-label="message"
                   className="form__textarea"

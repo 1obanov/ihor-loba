@@ -1,52 +1,52 @@
 .header {
   position: fixed;
-  width: 100%;
-  background-color: var(--white);
   z-index: 1;
   display: none;
+  width: 100%;
+  background-color: var(--white);
 
-  @media (max-width: 1023px) {
+  @media (width <= 1023px) {
     display: block;
   }
 
   &__wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
   }
 
   .hamburger {
     display: flex;
-    color: var(--secondary);
     padding: 0;
-    border: unset;
+    color: var(--secondary);
     background-color: unset;
+    border: unset;
   }
 
   .logo {
     h4 {
       position: relative;
-      font-style: italic;
-      font-size: 28px;
-      letter-spacing: 1px;
-      font-family: var(--font-accent);
-      line-height: 1;
-      color: rgba(19, 15, 73, 0.07);
       display: block;
-      text-align: center;
       margin: 0;
+      font-family: var(--font-accent);
+      font-size: 28px;
+      line-height: 1;
+      color: rgb(19 15 73 / 7%);
+      font-style: italic;
+      letter-spacing: 1px;
+      text-align: center;
 
       span {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         z-index: 1;
         font-family: var(--font-primary);
-        font-weight: 700;
         font-size: 16px;
+        font-weight: 700;
         color: var(--secondary);
+        transform: translate(-50%, -50%);
         font-style: normal;
         letter-spacing: normal;
       }
