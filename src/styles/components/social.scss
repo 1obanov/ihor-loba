@@ -9,21 +9,25 @@
     justify-content: flex-start;
   }
 
-  li {
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      background-color: rgb(19 15 73 / 5%);
-      border-radius: 50%;
+  &__link {
+    --social-link-background-color: rgb(var(--secondary) / 5%);
 
-      @media (hover: hover) {
-        &:hover {
-          background-color: rgb(19 15 73 / 10%);
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--social-link-background-color);
+    border-radius: 50%;
+
+    @media (hover: hover) {
+      &:hover {
+        --social-link-background-color: rgb(var(--secondary) / 10%);
       }
+    }
+
+    &:active {
+      --social-link-background-color: rgb(var(--secondary) / 15%);
     }
   }
 }

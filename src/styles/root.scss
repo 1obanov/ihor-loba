@@ -1,23 +1,23 @@
 :root {
-  --primary: #55527c;
-  --secondary: #130f49;
-  --accent: #ff972d;
-  --white: #fff;
-  --black: #000;
-  --purple: #a5a6ff;
-  --blue: #e9f9ff;
-  --gray-100: #f4f4fe;
-  --gray-200: #f3f9ff;
-  --gray-300: #f1f4fb;
-  --gray-400: #ebebeb;
-  --gray-500: #c1c2c2;
-  --green-100: #dff0d8;
-  --green-200: #d6e9c6;
-  --green-900: #3c763d;
-  --red-100: #f2dede;
-  --red-200: #ebccd1;
-  --red-500: #ff2121;
-  --red-900: #a94442;
+  --primary: 85 82 124; // #55527c
+  --secondary: 19 15 73; // #130f49
+  --accent: 255 129 0; // #ff8100
+  --white: 255 255 255; // #fff
+  --black: 20 20 20; // #000
+  --purple: 146 147 253; // #9293fd
+  --blue: 233 249 255; // #e9f9ff
+  --gray-100: 244 244 254; // #f4f4fe
+  --gray-200: 243 249 255; // #f3f9ff
+  --gray-300: 241 244 251; // #f1f4fb
+  --gray-400: 235 235 235; // #ebebeb
+  --gray-500: 193 194 194; // #c1c2c2
+  --green-100: 223 240 216; // #dff0d8
+  --green-200: 214 233 198; // #d6e9c6
+  --green-900: 60 118 61; // #3c763d
+  --red-100: 242 222 222; // #f2dede
+  --red-200: 235 204 209; // #ebccd1
+  --red-500: 255 33 33; // #ff2121
+  --red-900: 169 68 66; // #a94442
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Karla", sans-serif;
   --font-accent: "Kristi", cursive;

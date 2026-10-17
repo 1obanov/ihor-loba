@@ -29,25 +29,25 @@ function About() {
             <div className="headline">
               <span className="headline__subtitle">- Nice to meet you!</span>
               <h2 className="headline__title">Ihor lobanov</h2>
-              <p className="headline__text">Front-end Developer</p>
+              <p className="headline__text">
+                Bringing design and code together
+              </p>
             </div>
           </div>
           <div className="about__right">
-            <div className="text">
+            <div className="about__text">
               <p>
-                Hello there! My name is <span>Ihor Lobanov</span>. I am a
-                dynamic and creative front-end developer with a passion for
-                crafting digital experiences.
+                Hello there! I'm <span>Ihor Lobanov</span>, a creative developer
+                passionate about crafting digital experiences and bringing ideas
+                to life through design and code.
               </p>
               <p>
-                I thrive on the intersection of design and technology,
-                constantly seeking innovative ways to improve user interactions
-                and enhance visual appeal. With a proven track record of
-                delivering user-centric solutions, I bring a mix of artistic
-                creativity and technical expertise. Through effective
-                collaboration and a keen attention to detail, I strive to create
-                interfaces that not only captivate users but also drive business
-                objectives.
+                Proficient in JavaScript, HTML, CSS/SCSS, jQuery, and Figma,
+                with hands-on experience in React. Skilled in translating UI/UX
+                mockups into responsive, pixel-perfect web interfaces, with a
+                strong focus on component architecture and design systems.
+                Passionate about delivering clean, maintainable code and
+                exceptional user experiences for modern web applications.
               </p>
             </div>
             <div className="info">
@@ -56,6 +56,7 @@ function About() {
                   <div className="info-block">
                     <span className="info-block__title">{contact.title}</span>
                     <a
+                      className="info-block__link"
                       href={contact.link}
                       target={contact.isExternal ? "_blank" : undefined}
                       rel={contact.isExternal ? "noreferrer" : undefined}

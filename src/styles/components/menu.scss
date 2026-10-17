@@ -1,0 +1,44 @@
+.menu {
+  &__list {
+    margin: 0;
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (width <= 1023px) {
+      text-align: left;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link {
+    --menu-link-color: rgb(var(--secondary));
+
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: var(--menu-link-color);
+
+    @media (width <= 1023px) {
+      padding: 5px 0;
+    }
+
+    &--active {
+      --menu-link-color: rgb(var(--purple));
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        --menu-link-color: rgb(var(--purple));
+      }
+    }
+
+    &:active {
+      --menu-link-color: rgb(var(--primary));
+    }
+  }
+}

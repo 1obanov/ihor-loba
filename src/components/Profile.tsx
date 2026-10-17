@@ -21,6 +21,10 @@ const educationList: TimelineItem[] = [
 ];
 const experienceList: TimelineItem[] = [
   {
+    title: "UI Developer",
+    subtitle: "BrainRocket",
+  },
+  {
     title: "UI Front-End Developer",
     subtitle: "ShelfNow",
   },
@@ -81,15 +85,17 @@ function Profile() {
         <div className="profile__wrapper">
           <div className="profile__item">
             <div className="profile-block">
-              <h6 className="profile-block__title">Education</h6>
+              <h6 className="profile-block__heading">Education</h6>
               {educationList.map((item) => (
                 <div key={item.title} className="profile-block__info">
-                  <div className="icon">
+                  <div className="profile-block__icon">
                     <GraduationCap />
                   </div>
-                  <div className="text">
-                    <h6>{item.title}</h6>
-                    <span>{item.subtitle}</span>
+                  <div className="profile-block__text">
+                    <h6 className="profile-block__title">{item.title}</h6>
+                    <span className="profile-block__subtitle">
+                      {item.subtitle}
+                    </span>
                   </div>
                 </div>
               ))}
@@ -97,15 +103,17 @@ function Profile() {
           </div>
           <div className="profile__item">
             <div className="profile-block">
-              <h6 className="profile-block__title">Work Experience</h6>
+              <h6 className="profile-block__heading">Work Experience</h6>
               {experienceList.map((item) => (
                 <div key={item.title} className="profile-block__info">
-                  <div className="icon">
+                  <div className="profile-block__icon">
                     <Building />
                   </div>
-                  <div className="text">
-                    <h6>{item.title}</h6>
-                    <span>{item.subtitle}</span>
+                  <div className="profile-block__text">
+                    <h6 className="profile-block__title">{item.title}</h6>
+                    <span className="profile-block__subtitle">
+                      {item.subtitle}
+                    </span>
                   </div>
                 </div>
               ))}
@@ -113,14 +121,14 @@ function Profile() {
           </div>
           <div className="profile__item">
             <div className="profile-block">
-              <h6 className="profile-block__title">Languages</h6>
+              <h6 className="profile-block__heading">Languages</h6>
               {languageList.map((lang) => (
                 <div key={lang.code} className="profile-block__info">
-                  <div className="icon">
+                  <div className="profile-block__icon">
                     <p>{lang.code}</p>
                   </div>
-                  <div className="text">
-                    <h6>{lang.name}</h6>
+                  <div className="profile-block__text">
+                    <h6 className="profile-block__title">{lang.name}</h6>
                     <div className="bar" data-width={lang.level}>
                       <div className="bar__inner"></div>
                     </div>

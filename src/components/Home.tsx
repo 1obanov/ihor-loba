@@ -11,12 +11,12 @@ function Home() {
               Hi, I'm <span className="title__name">Ihor!</span> <br />
               Creative Coder
             </h1>
-            <span className="subtitle">Front-end Developer</span>
+            <span className="subtitle">UI Front-end Developer</span>
             <p>
-              I've always been drawn to the overlap between design and
-              development. I enjoy each aspect and love building websites from
-              start to finish, as part of a team delivering products for a
-              global user base.
+              I've always been drawn to the intersection of design and
+              development. I love turning ideas into polished, responsive
+              websites, combining visual precision with clean, maintainable code
+              to create meaningful user experiences.
             </p>
             <div className="buttons">
               <a href={resume} className="btn" download="IhorLobanov.pdf">

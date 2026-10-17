@@ -10,6 +10,10 @@
     align-items: center;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+
+    @media (width <= 767px) {
+      gap: 20px;
+    }
   }
 
   &__item {

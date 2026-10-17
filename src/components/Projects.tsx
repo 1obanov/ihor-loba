@@ -33,19 +33,19 @@ const projectsList: ProjectItem[] = [
     title: "Todo app",
     subtitle: "Javascript based",
     description: "Minimalist to-do app built with plain JavaScript.",
-    link: "https://github.com/1obanov/To-Do-App",
+    link: "https://github.com/1obanov/to-do-app",
     image: projectImage2,
     imageAlt: "todo app",
   },
   {
-    id: "shop",
-    title: "Shop app",
+    id: "cartify",
+    title: "Cartify",
     subtitle: "React based",
     description:
-      "The Shop App is a dynamic React-based e-commerce application that allows users to browse products, manage their cart and wishlist, place orders, and handle account settings seamlessly.",
-    link: "https://github.com/1obanov/shop-app",
+      "The Cartify is a dynamic React-based e-commerce application that allows users to browse products, manage their cart and wishlist, place orders, and handle account settings seamlessly.",
+    link: "https://github.com/1obanov/cartify",
     image: projectImage3,
-    imageAlt: "shop app",
+    imageAlt: "cartify",
   },
   {
     id: "movie",
@@ -58,14 +58,14 @@ const projectsList: ProjectItem[] = [
     imageAlt: "movie app",
   },
   {
-    id: "recipe",
-    title: "Recipe app",
+    id: "recipe-box",
+    title: "RecipeBox",
     subtitle: "React based",
     description:
-      "The Recipe App is a dynamic React-based application that showcases the usage of React Router for seamless navigation between different pages. The app provides a delightful experience for users to explore various recipes, categories, and more.",
-    link: "https://github.com/1obanov/recipe-app",
+      "The RecipeBox is a dynamic React-based application that showcases the usage of React Router for seamless navigation between different pages. The app provides a delightful experience for users to explore various recipes, categories, and more.",
+    link: "https://github.com/1obanov/recipe-box",
     image: projectImage5,
-    imageAlt: "recipe app",
+    imageAlt: "recipe box",
   },
 ];
 

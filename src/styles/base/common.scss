@@ -54,6 +54,10 @@ body {
 }
 
 .btn {
+  --btn-color: rgb(var(--white));
+  --btn-background-color: rgb(var(--secondary));
+  --btn-border-color: rgb(var(--secondary));
+
   display: flex;
   align-items: center;
   gap: 10px;
@@ -61,31 +65,74 @@ body {
   padding: 14px 32px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--white);
-  background-color: var(--secondary);
-  border: 1px solid var(--secondary);
+  color: var(--btn-color);
+  background-color: var(--btn-background-color);
+  border: 1px solid var(--btn-border-color);
   border-radius: 4px;
   transition:
     color var(--animation-duration) var(--animation-timing-function),
-    background-color var(--animation-duration) var(--animation-timing-function);
+    background-color var(--animation-duration) var(--animation-timing-function),
+    border-color var(--animation-duration) var(--animation-timing-function);
   white-space: nowrap;
 
   @media (hover: hover) {
     &:hover {
-      color: var(--primary);
-      background-color: transparent;
+      --btn-background-color: rgb(var(--secondary) / 90%);
+      --btn-border-color: rgb(var(--secondary) / 90%);
     }
   }
 
+  &:active {
+    --btn-background-color: color-mix(
+      in srgb,
+      rgb(var(--secondary)),
+      rgb(var(--black))
+    );
+    --btn-border-color: color-mix(
+      in srgb,
+      rgb(var(--secondary)),
+      rgb(var(--black))
+    );
+  }
+
   &--outline {
-    color: var(--primary);
-    background-color: transparent;
+    --btn-color: rgb(var(--secondary));
+    --btn-background-color: transparent;
 
     @media (hover: hover) {
       &:hover {
-        color: var(--white);
-        background-color: var(--secondary);
+        --btn-background-color: rgb(var(--secondary) / 5%);
       }
     }
+
+    &:active {
+      --btn-background-color: rgb(var(--secondary) / 10%);
+    }
+  }
+}
+
+.hamburger,
+.close-menu {
+  --menu-control-color: rgb(var(--secondary));
+
+  display: flex;
+  padding: 0;
+  color: var(--menu-control-color);
+  background-color: unset;
+  border: unset;
+  transition: color var(--animation-duration) var(--animation-timing-function);
+
+  @media (hover: hover) {
+    &:hover {
+      --menu-control-color: rgb(var(--secondary) / 90%);
+    }
+  }
+
+  &:active {
+    --menu-control-color: color-mix(
+      in srgb,
+      rgb(var(--secondary)),
+      rgb(var(--black))
+    );
   }
 }

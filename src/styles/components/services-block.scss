@@ -1,14 +1,14 @@
 .services-block {
   height: 100%;
   padding: 32px 40px;
-  border: 1px solid rgb(30 30 30 / 20%);
+  border: 1px solid rgb(var(--black) / 10%);
   border-radius: 4px;
 
   &__number {
     display: inline-block;
     font-family: var(--font-primary);
     font-size: 20px;
-    color: rgb(19 15 73 / 50%);
+    color: rgb(var(--secondary) / 50%);
     margin-bottom: 15px;
   }
 

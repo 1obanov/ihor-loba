@@ -12,11 +12,15 @@ function Header({ mobileMenuShow, toggleMobileMenu }: HeaderProps) {
       <div className="header">
         <div className="container">
           <div className="header__wrapper">
-            <button className="hamburger" onClick={toggleMobileMenu}>
+            <button
+              type="button"
+              className="hamburger"
+              onClick={toggleMobileMenu}
+            >
               <Menu size={28} />
             </button>
             <div className="logo">
-              <h4>
+              <h4 className="logo__title">
                 Lobanov
                 <span>Ihor</span>
               </h4>

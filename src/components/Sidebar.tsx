@@ -8,7 +8,7 @@ function Sidebar() {
       <div className="sidebar">
         <div className="sidebar__inner">
           <div className="author">
-            <h4>
+            <h4 className="author__title">
               Ihor Lobanov
               <span>Ihor Lobanov</span>
             </h4>

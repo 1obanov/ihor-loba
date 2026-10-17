@@ -5,8 +5,8 @@
   width: 370px;
   height: 100vh;
   padding: 50px 0;
-  background-color: var(--white);
-  border-right: 1px solid rgb(85 82 124 / 10%);
+  background-color: rgb(var(--white));
+  border-right: 1px solid rgb(var(--black) / 10%);
   overflow-y: auto;
 
   @media (width <= 1199px) {
@@ -26,14 +26,14 @@
   }
 
   .author {
-    h4 {
+    &__title {
       position: relative;
       display: block;
       margin: 0;
       font-family: var(--font-accent);
       font-size: 88px;
       line-height: 1;
-      color: rgb(19 15 73 / 7%);
+      color: rgb(var(--secondary) / 7%);
       font-style: italic;
       text-align: center;
 
@@ -46,46 +46,17 @@
         top: 50%;
         left: 50%;
         z-index: 1;
+        width: 100%;
         font-family: var(--font-primary);
         font-size: 30px;
         font-weight: 700;
-        color: var(--secondary);
+        color: rgb(var(--secondary));
         transform: translate(-50%, -50%);
         font-style: normal;
         margin-top: 5px;
 
         @media (width <= 1199px) {
           font-size: 22px;
-        }
-      }
-    }
-  }
-
-  .menu {
-    ul {
-      margin: 0;
-
-      li {
-        text-align: center;
-
-        &:not(:last-child) {
-          margin-bottom: 16px;
-        }
-
-        a {
-          display: inline-block;
-          padding: 5px 10px;
-          color: var(--primary);
-
-          &.active {
-            color: var(--purple);
-          }
-
-          @media (hover: hover) {
-            &:hover {
-              color: var(--purple);
-            }
-          }
         }
       }
     }

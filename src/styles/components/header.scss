@@ -3,7 +3,7 @@
   z-index: 1;
   display: none;
   width: 100%;
-  background-color: var(--white);
+  background-color: rgb(var(--white));
 
   @media (width <= 1023px) {
     display: block;
@@ -16,23 +16,15 @@
     padding: 10px 0;
   }
 
-  .hamburger {
-    display: flex;
-    padding: 0;
-    color: var(--secondary);
-    background-color: unset;
-    border: unset;
-  }
-
   .logo {
-    h4 {
+    &__title {
       position: relative;
       display: block;
       margin: 0;
       font-family: var(--font-accent);
       font-size: 28px;
       line-height: 1;
-      color: rgb(19 15 73 / 7%);
+      color: rgb(var(--secondary) / 7%);
       font-style: italic;
       letter-spacing: 1px;
       text-align: center;
@@ -45,7 +37,7 @@
         font-family: var(--font-primary);
         font-size: 16px;
         font-weight: 700;
-        color: var(--secondary);
+        color: rgb(var(--secondary));
         transform: translate(-50%, -50%);
         font-style: normal;
         letter-spacing: normal;

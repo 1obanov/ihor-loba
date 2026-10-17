@@ -79,15 +79,23 @@ function Contact() {
               I'm open to new opportunities and collaborations. Feel free to
               reach out — I'm always happy to chat and see how I can help.
             </p>
-            <ul className="contact__info">
-              <li>
-                <a href="tel:+48881291317">+48 881 291 317</a>
+            <ul className="contact-nav">
+              <li className="contact-nav__item">
+                <a className="contact-nav__link" href="tel:+48881291317">
+                  +48 881 291 317
+                </a>
               </li>
-              <li>
-                <a href="mailto:ihor.loba@gmail.com">ihor.loba@gmail.com</a>
-              </li>
-              <li>
+              <li className="contact-nav__item">
                 <a
+                  className="contact-nav__link"
+                  href="mailto:ihor.loba@gmail.com"
+                >
+                  ihor.loba@gmail.com
+                </a>
+              </li>
+              <li className="contact-nav__item">
+                <a
+                  className="contact-nav__link"
                   href="https://goo.gl/maps/dRMvLeSL5yBh2JyG9"
                   target="_blank"
                   rel="noreferrer"

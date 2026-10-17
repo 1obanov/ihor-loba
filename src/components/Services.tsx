@@ -13,8 +13,8 @@ const serviceList: ServiceItem[] = [
     text: "I ensure that every website I build looks and works perfectly across all devices — from large desktop screens to tablets and smartphones.",
   },
   {
-    title: "Web design",
-    text: "I combine aesthetics with usability to create clean, intuitive, and visually appealing interfaces.",
+    title: "UI Design & Figma",
+    text: "I use Figma to create website layouts and interface designs from scratch, turning ideas into clean, modern, and user-friendly designs.",
   },
   {
     title: "Clean Code",

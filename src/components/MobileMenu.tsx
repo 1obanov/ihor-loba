@@ -19,7 +19,11 @@ function MobileMenu({ mobileMenuShow, toggleMobileMenu }: MobileMenuProps) {
     <>
       <div className={`mobile-menu ${mobileMenuShow ? "show" : ""}`}>
         <div className="mobile-menu__inner">
-          <button className="close-menu" onClick={toggleMobileMenu}>
+          <button
+            type="button"
+            className="close-menu"
+            onClick={toggleMobileMenu}
+          >
             <X size={28} />
           </button>
           <Menu handleLinkClick={handleLinkClick} />

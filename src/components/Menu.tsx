@@ -41,13 +41,17 @@ function Menu({ handleLinkClick }: MenuProps) {
 
   return (
     <div className="menu">
-      <ul>
+      <ul className="menu__list">
         {["home", "about", "services", "skills", "projects", "contact"].map(
           (section) => (
-            <li key={section}>
+            <li key={section} className="menu__item">
               <a
                 href={`#${section}`}
-                className={activeSection === section ? "active" : ""}
+                className={
+                  activeSection === section
+                    ? "menu__link menu__link--active"
+                    : "menu__link"
+                }
                 onClick={handleLinkClick}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}

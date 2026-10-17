@@ -2,7 +2,7 @@
   --headline-margin: 20px;
 
   padding: 75px 0;
-  background-color: var(--blue);
+  background-color: rgb(var(--blue));
 
   @media (width <= 767px) {
     padding: 50px 0;
@@ -24,44 +24,54 @@
   }
 
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__info {
     margin: 0;
+  }
 
-    li {
+  &-nav {
+    margin: 0;
+
+    &__item {
       &:not(:last-child) {
         margin-bottom: 14px;
       }
+    }
 
-      a {
-        position: relative;
-        display: inline-block;
-        padding: 2px 0;
-        font-family: var(--font-primary);
-        font-weight: 600;
-        color: var(--secondary);
+    &__link {
+      --contact-nav-link-color: rgb(var(--secondary));
 
-        &::after {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: var(--secondary);
-          transition: width var(--animation-duration)
-            var(--animation-timing-function);
-          content: "";
+      position: relative;
+      display: inline-block;
+      padding: 2px 0;
+      font-family: var(--font-primary);
+      font-weight: 600;
+      color: var(--contact-nav-link-color);
+      transition: color var(--animation-duration)
+        var(--animation-timing-function);
+
+      @media (hover: hover) {
+        &:hover {
+          --contact-nav-link-color: rgb(var(--accent));
         }
+      }
 
-        @media (hover: hover) {
-          &:hover {
-            &::after {
-              width: 0;
-            }
-          }
-        }
+      &:active {
+        --contact-nav-link-color: rgb(var(--accent) / 70%);
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--contact-nav-link-color);
+        content: "";
+        transition: background-color var(--animation-duration)
+          var(--animation-timing-function);
       }
     }
   }

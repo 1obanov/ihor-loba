@@ -25,12 +25,12 @@
     }
   }
 
-  .text {
+  &__text {
     margin-bottom: 40px;
 
     p {
       span {
-        color: var(--accent);
+        color: rgb(var(--accent));
       }
     }
   }

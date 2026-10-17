@@ -15,7 +15,7 @@
     z-index: -1;
     width: 50%;
     height: 100%;
-    background-color: var(--black);
+    background-color: rgb(var(--black));
     transition: all 0.3s ease 0s;
     content: "";
   }
@@ -39,7 +39,7 @@
       left: 0;
       width: 1px;
       height: 0%;
-      background-color: var(--white);
+      background-color: rgb(var(--white));
       transform: translateY(-50%);
       content: "";
       animation: line-height 1000ms ease-in-out 0s forwards;
@@ -51,7 +51,7 @@
       left: 0;
       width: 1px;
       height: 100%;
-      background-color: var(--white);
+      background-color: rgb(var(--white));
       transform: translateY(-100%);
       content: "";
       animation: line-round 1200ms linear 0s infinite;
