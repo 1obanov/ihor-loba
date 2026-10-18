@@ -19,14 +19,25 @@
 
   &__input,
   &__textarea {
+    --form-input-border-color: rgb(var(--gray-400));
+
     width: 100%;
     padding: 20px;
     font-family: var(--font-secondary);
     color: rgb(var(--secondary));
     background-color: rgb(var(--white));
-    border: 1px solid #eee;
+    border: 1px solid var(--form-input-border-color);
     border-radius: 4px;
     outline: none;
+    transition:
+      color var(--animation-duration) var(--animation-timing-function),
+      border-color var(--animation-duration) var(--animation-timing-function);
+
+    @media (hover: hover) {
+      &:hover {
+        --form-input-border-color: rgb(var(--secondary) / 50%);
+      }
+    }
 
     &::placeholder {
       color: rgb(var(--secondary) / 50%);

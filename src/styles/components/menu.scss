@@ -28,17 +28,21 @@
     }
 
     &--active {
-      --menu-link-color: rgb(var(--purple));
+      --menu-link-color: rgb(var(--accent));
     }
 
     @media (hover: hover) {
-      &:hover {
-        --menu-link-color: rgb(var(--purple));
+      &:hover:not(.menu__link--active) {
+        --menu-link-color: rgb(var(--primary));
       }
     }
 
-    &:active {
-      --menu-link-color: rgb(var(--primary));
+    &:active:not(.menu__link--active) {
+      --menu-link-color: color-mix(
+        in srgb,
+        rgb(var(--primary)),
+        rgb(var(--black))
+      );
     }
   }
 }
