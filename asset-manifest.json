@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ihor-loba/static/css/main.1c6edb67.css",
+    "main.css": "/ihor-loba/static/css/main.b3209dd3.css",
     "main.js": "/ihor-loba/static/js/main.5bc631f6.js",
     "static/media/IhorLobanov.pdf": "/ihor-loba/static/media/IhorLobanov.e58b49b862d790c29008.pdf",
     "static/media/image.png": "/ihor-loba/static/media/image.befb0890225004d3bab4.png",
@@ -18,11 +18,11 @@
     "static/media/css.svg": "/ihor-loba/static/media/css.d92f803b37a472774edffa3f59f8dfa1.svg",
     "static/media/html.svg": "/ihor-loba/static/media/html.0931ce637893000a52b0522aff78c764.svg",
     "static/media/angular.svg": "/ihor-loba/static/media/angular.c19a19d1234a99cb1911377516871374.svg",
-    "main.1c6edb67.css.map": "/ihor-loba/static/css/main.1c6edb67.css.map",
+    "main.b3209dd3.css.map": "/ihor-loba/static/css/main.b3209dd3.css.map",
     "main.5bc631f6.js.map": "/ihor-loba/static/js/main.5bc631f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c6edb67.css",
+    "static/css/main.b3209dd3.css",
     "static/js/main.5bc631f6.js"
   ]
 }
