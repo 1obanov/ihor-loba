@@ -5,6 +5,7 @@ interface TimelineItem {
   title: string;
   subtitle: string;
 }
+
 const educationList: TimelineItem[] = [
   {
     title: "Cracow University of Economics",
@@ -19,6 +20,7 @@ const educationList: TimelineItem[] = [
     subtitle: "Bachelor of Arts in Marine Engineering (coastal/seafarers)",
   },
 ];
+
 const experienceList: TimelineItem[] = [
   {
     title: "UI Developer",
@@ -39,6 +41,7 @@ interface LanguageItem {
   name: string;
   level: string;
 }
+
 const languageList: LanguageItem[] = [
   { code: "EN", name: "English", level: "80%" },
   { code: "PL", name: "Polish", level: "85%" },

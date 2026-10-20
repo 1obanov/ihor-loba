@@ -58,7 +58,7 @@ function Contact() {
       }, 5000);
 
       reset();
-    } catch (error) {
+    } catch {
       setFormStatus({
         message: "Something went wrong. Please try again later.",
         type: "error",

@@ -8,7 +8,13 @@ import react from "../assets/svg/react.svg";
 import angular from "../assets/svg/angular.svg";
 import figma from "../assets/svg/figma.svg";
 
-const SVG = RawSVG as React.ComponentType<any>;
+const SVG = RawSVG as React.ComponentType<SVGProps>;
+
+type SVGProps = {
+  src: string;
+  width: number;
+  height: number;
+};
 
 interface SkillItem {
   icon: string;
