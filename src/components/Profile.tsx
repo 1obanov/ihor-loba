@@ -12,8 +12,8 @@ const educationList: TimelineItem[] = [
     subtitle: "Master of Arts in Computer science",
   },
   {
-    title: "Bootcamp at Coders Lab",
-    subtitle: "Learning programming languages, creating own projects.",
+    title: "Front-end Developer Course",
+    subtitle: "Coders Lab",
   },
   {
     title: "Odessa National Maritime University",
@@ -27,7 +27,7 @@ const experienceList: TimelineItem[] = [
     subtitle: "BrainRocket",
   },
   {
-    title: "UI Front-End Developer",
+    title: "UX/UI Frontend Developer",
     subtitle: "ShelfNow",
   },
   {

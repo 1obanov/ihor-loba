@@ -42,7 +42,7 @@ function About() {
                 to life through design and code.
               </p>
               <p>
-                Proficient in JavaScript, HTML, CSS/SCSS, jQuery, and Figma,
+                Proficient in JavaScript, TypeScript, HTML, CSS/SCSS, and Figma,
                 with hands-on experience in React. Skilled in translating UI/UX
                 mockups into responsive, pixel-perfect web interfaces, with a
                 strong focus on component architecture and design systems.

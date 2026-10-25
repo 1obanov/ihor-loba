@@ -2,7 +2,7 @@ import RawSVG from "react-inlinesvg";
 import html from "../assets/svg/html.svg";
 import css from "../assets/svg/css.svg";
 import javascript from "../assets/svg/javascript.svg";
-import jquery from "../assets/svg/jquery.svg";
+import typescript from "../assets/svg/typescript.svg";
 import sass from "../assets/svg/sass.svg";
 import react from "../assets/svg/react.svg";
 import angular from "../assets/svg/angular.svg";
@@ -26,11 +26,11 @@ const skillList: SkillItem[] = [
   { icon: html, title: "HTML", level: "Advanced" },
   { icon: css, title: "CSS", level: "Advanced" },
   { icon: javascript, title: "JavaScript", level: "Regular" },
-  { icon: jquery, title: "jQuery", level: "Regular" },
-  { icon: sass, title: "Sass", level: "Advanced" },
+  { icon: typescript, title: "TypeScript", level: "Regular" },
   { icon: react, title: "React", level: "Regular" },
-  { icon: angular, title: "Angular", level: "Junior" },
+  { icon: sass, title: "Sass", level: "Advanced" },
   { icon: figma, title: "Figma", level: "Regular" },
+  { icon: angular, title: "Angular", level: "Junior" },
 ];
 
 function Skills() {

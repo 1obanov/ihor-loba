@@ -23,7 +23,7 @@ const projectsList: ProjectItem[] = [
     title: "Kanban Board",
     subtitle: "React based",
     description:
-      "A modern Kanban style task management application built with React and Redux, offering an intuitive interface to create, manage, and filter tasks with ease.",
+      "A modern Kanban style task management application built with React and Redux Toolkit, offering an intuitive interface to create, manage, and filter tasks with ease.",
     link: "https://github.com/1obanov/kanban-board",
     image: projectImage1,
     imageAlt: "kanban board",
